@@ -1,0 +1,372 @@
+
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+    }
+    @keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+    }
+@-webkit-keyframes slide-in-blurred-bottom {
+    0% {
+        -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+    }
+    @keyframes slide-in-blurred-bottom {
+    0% {
+        -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
+    }
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+    }
+    @keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+    }
+    }
+
+h1 {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+    font-size: 45px;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+
+}
+
+body {
+    height: 100%;
+    /* background-image: url("assets/background.gif"); */
+}
+
+.compNumBox {
+    background-color: cornsilk;
+    height: 150px;
+    width: 350px;
+    opacity: 0.85;
+    text-align: center;
+    margin: 10px;
+    border-style: double;
+    border-width: 10px;
+    border-color: antiquewhite;
+
+}
+
+.score {
+    font-size: 300%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin: 15px;
+    padding: 40px;
+    -webkit-animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+#scoreBox {
+    background-color: purple;
+    height: 150px;
+    width: 150px;
+    float: right;
+    position: relative;
+    top: -29px;
+    right: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#container1 {
+    height: 150px;
+    width: 500px;
+
+}
+
+#userHeading {
+    height: 50px;
+    width: 350px;
+    background-color: black;
+    position: absolute;
+    bottom: 150px;
+    margin: 10px;
+    opacity: 1;
+}
+
+h2 {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 135%;
+}
+
+#userNumBox {
+    background-color: black;
+    height: 150px;
+    width: 350px;
+    opacity: 0.7;
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bottomScore {
+    font-size: 300%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin: 15px;
+    padding: 30px;
+    color: white;
+}
+
+h3 {
+    color: white;
+    margin: 7px;
+    padding: 7px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+
+}
+
+.background {
+    background: url('/Users/obi/Desktop/unit-4-game/assets/newbackground.gif');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.layer {
+    background: url('/Users/obi/Desktop/unit-4-game/assets/newbackground.gif');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+
+}
+
+
+.layerBlack {
+    background-color: white;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+
+}
+
+img:hover {
+    opacity: 0.63;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    float: bottom;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img:active {
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+#gemSelection {
+    float: right;
+    position: relative;
+    top: 330px;
+    background-color: cornsilk;
+    border-style: double;
+    border-width: 10px;
+    border-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#instructBox {
+    float: right;
+    position: absolute;
+    right: 20px;
+    background-color: cornsilk;
+    border-style: double;
+    border-width: 10px;
+    border-color: antiquewhite;
+    height: 400px;
+    width: 500px;
+}
+
+#ins {
+    margin: 10px;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.Icon{
+    background-color: purple;
+    position: absolute;
+    bottom: 170px;
+    height: 35px;
+    width: 35px;
+    right: 523px;
+    float: top;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+.Icon2{
+    background-color: purple;
+    position: absolute;
+    bottom: 170px;
+    height: 35px;
+    width: 35px;
+    right: 370px;
+    float: top;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+.Icon3{
+    background-color: purple;
+    position: absolute;
+    bottom: 170px;
+    height: 35px;
+    width: 35px;
+    right: 214px;
+    float: top;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+.Icon4{
+    background-color: purple;
+    position: absolute;
+    bottom: 170px;
+    height: 35px;
+    width: 35px;
+    right: 60px;
+    float: top;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+[design-class="shownVal"] {
+    text-align: center;
+    color: white;
+    padding: 4px;
+    margin: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* position: absolute; */
+}
