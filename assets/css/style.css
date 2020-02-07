@@ -106,7 +106,7 @@
     }
 
 h1 {
-    color: white;
+    color: black;
     font-family: 'Lobster', cursive;
     font-style: italic;
     font-size: 45px;
@@ -118,7 +118,7 @@ h1 {
 
 body {
     height: 100%;
-    /* background-image: url("assets/background.gif"); */
+    /* background-image: url("assets/bsbackground.gif"); */
 }
 
 .compNumBox {
@@ -211,7 +211,7 @@ h3 {
 }
 
 .background {
-    background: url('/Users/obi/Desktop/unit-4-game/assets/newbackground.gif');
+    background: url('/Users/obi/Desktop/unit-4-game/assets/bsbackground.gif');
     position: fixed;
     height: 100%;
     width: 100%;

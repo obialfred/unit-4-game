@@ -46,7 +46,7 @@ $(document).ready(function(){
     } 
     
     else if (userTotalScore > cScore){
-        // alert('eh, you lost cheif');
+        // alert('eh, you lost chief');
         $('.score').text('NOO! You lost!').css({'color': 'red', 'font-size': '35px'});
         setInterval(function(){$('.score').text(cScore).css({'color': 'black', 'font-size': '300%'});}, 3000);
         losses++;
